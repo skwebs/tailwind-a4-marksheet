@@ -239,8 +239,54 @@
                 <div class="w-full aspect-square border border-black">
                   <img src="./sample-qr-code.png" alt="" />
                 </div>
-
-                <div class="flex flex-col gap-2 mt-2">
+                <div>
+                  <table
+                    class="border border-black mt-2 text-xs w-full text-left"
+                  >
+                    <tr>
+                      <th
+                        class="border border-black px-1 text-center"
+                        colspan="2"
+                      >
+                        Grading System
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">A+</th>
+                      <td class="border border-black px-1">91%-100%</td>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">A</th>
+                      <td class="border border-black px-1">81%-90%</td>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">B+</th>
+                      <td class="border border-black px-1">71%-80%</td>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">B</th>
+                      <td class="border border-black px-1">61%-70%</td>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">C+</th>
+                      <td class="border border-black px-1">51%-60%</td>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">C</th>
+                      <td class="border border-black px-1">41%-50%</td>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">D</th>
+                      <td class="border border-black px-1">33%-50%</td>
+                    </tr>
+                    <tr>
+                      <th class="border border-black px-1">E</th>
+                      <td class="border border-black px-1">Less than 33%</td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- hidden -->
+                <div class="flex-col gap-2 mt-2 hidden">
                   <div
                     class="flex flex-col text-center border border-black divide-y divide-black"
                   >
@@ -262,10 +308,13 @@
                     <span>A+</span>
                   </div>
                 </div>
+                <!-- /hidden -->
               </div>
             </div>
             <div>
-              <div class="text-xs p-2 border border-black rounded-lg mt-2">
+              <div
+                class="text-xs p-2 border border-black rounded-lg mt-2 hidden"
+              >
                 <strong>Grading Scale :</strong> A+(91%-100%), A(81%-90%),
                 B+(71%-80%), B(61%-70%), C+(51%-60%), C(41%-50%), D(33%-40%),
                 E(32% & Below)
@@ -273,8 +322,28 @@
             </div>
           </div>
 
+          <div class="px-4 py-2">
+            <table class="border border-black w-full text-center">
+              <tr>
+                <th class="border border-black">Obtained Marks</th>
+                <th class="border border-black">Obtained Marks %</th>
+                <th class="border border-black">Attendance</th>
+                <th class="border border-black">Grade</th>
+                <th class="border border-black">Position in Class</th>
+              </tr>
+
+              <tr>
+                <td class="border border-black">xxx</td>
+                <td class="border border-black">xxx</td>
+                <td class="border border-black">xxx</td>
+                <td class="border border-black">xxx</td>
+                <td class="border border-black">xxx</td>
+              </tr>
+            </table>
+          </div>
+
           <div>
-            <div class="border-b-2 border-gray-300 px-4 py-2">
+            <div class="px-4">
               <span class="font-semibold"> Remarks : </span>
               <span> This is a sample remarks for this demo result card. </span>
             </div>
